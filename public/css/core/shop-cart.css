@@ -1,0 +1,94 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+.clearfix { zoom: 1; }
+.clearfix:before { content: ""; display: table; }
+.clearfix:after { content: ""; display: table; clear: both; }
+
+/* ==========================================================================
+ █ shop-cart
+ ==========================================================================*/
+.container { margin-bottom: 100px; }
+
+/* * * shop-cart-table-wrapper 購物清單設定 * * */
+table { width: 90%; margin: 0 auto; }
+table th { border-bottom: none; border: none; }
+table tr:hover { background: #F3F3F3; }
+
+th, td { vertical-align: middle; text-align: center; min-width: 90px; }
+th input, td input { width: 50%; width: 100%; min-width: 50px; text-align: center; }
+
+thead { background-color: #E8E8E8; }
+
+.thead-detail { background-color: #C5C5C5; }
+
+td.td-sub { background-color: #F3F3F3; text-align: right; }
+
+.product-subtotal { color: #ff6633; font-size: 2rem; }
+
+.product-subtotal-normal { color: #333; }
+
+.del { font-size: 0.8rem; color: #BBB; text-decoration: line-through; display: block; }
+
+.media { width: 100%; padding: 10px; text-align: left; overflow: hidden; }
+.media a { display: block; float: left; width: 30%; }
+.media a img { max-height: 150px; border: 1px solid #e5e5e5; padding: 4px; cursor: pointer; }
+.media a img:hover { box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.22); }
+.media .desc { float: right; width: 70%; padding: 15px; }
+.media .desc a { display: inline-block; width: 100%; margin-bottom: 15px; }
+.media h2 { font-size: 1.5rem; line-height: 2rem; }
+.media h2:hover { text-decoration: underline; }
+.media p { font-size: 1rem; color: #BBB; }
+
+.product-remove { display: inline-block; cursor: pointer; border-radius: 50%; text-align: center; margin: 0 auto; width: 30px; height: 30px; color: #4a4a4a; }
+.product-remove:hover { border: 1px solid #D8D8D8; }
+
+/* * * shop-total-price-wrapper 總計金額設定 * * */
+.shop-total-price-wrapper { width: 95%; width: 90%; overflow: hidden; position: relative; margin-top: 30px; }
+.shop-total-price-wrapper table { width: 40%; float: right; margin-top: 50px; }
+.shop-total-price-wrapper tr:last-child { height: 80px; }
+.shop-total-price-wrapper .product-totalprice { font-size: 2rem; color: #ff6633; }
+.shop-total-price-wrapper .btn-primary { width: 80%; font-size: 1.5rem; padding: 0; height: 50px; }
+.shop-total-price-wrapper .btn-primary:hover { height: 50px; font-size: 1.6rem; }
+.shop-total-price-wrapper .btn-primary i { padding-right: 20px; font-size: 2rem; }
+.shop-total-price-wrapper .back-to-shop { position: absolute; left: 0; bottom: 0; margin-left: 50px; margin-bottom: 10px; }
+.shop-total-price-wrapper .back-to-shop i { width: 30px; padding-right: 20px; font-size: 2rem; }
+
+/* ==========================================================================
+ █ order
+ ==========================================================================*/
+.order-list { color: gray; }
+.order-list a { text-decoration: underline; }
+.order-list a:hover { color: #FF5722; }
+
+.order-date em { color: #ccc; }
+
+.order-num a { color: #cccccc; }
+.order-num a:hover { color: #FF5722; }
+.order-num a i { font-size: 2em; color: #7B7B7B; }
+
+.order-price { color: #333333; }
+
+.order-pay { font-size: 1.9rem; line-height: 0.9em; letter-spacing: 0.1em; color: #FF5722; }
+.order-pay em { font-size: 0.9rem; }
+
+.order-pay-no { font-size: 1.9rem; line-height: 0.9em; letter-spacing: 0.1em; }
+.order-pay-no em { font-size: 0.9rem; }
+
+/* ==========================================================================
+ █ order-done
+ ==========================================================================*/
+.shop-cart-table-wrapper { margin-bottom: 30px; overflow-x: auto; width: 90%; margin: 0 auto; }
+
+.list-title { border-bottom: 1px dashed #e5e5e5; text-align: center; font-weight: bolder; color: #BBBBBB; width: 90%; margin: 0 auto; margin-bottom: 30px; }
+
+.order-pay { padding: 20px 30px; }
+
+.order-pay-no { padding: 20px 30px; }
+
+.pay-actions p { padding: 20px 30px; }
+
+.form-right input:disabled { cursor: not-allowed; opacity: 1; }
+
+.form-control { font-size: 1.5rem; opacity: 1; }

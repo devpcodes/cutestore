@@ -1,0 +1,57 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+.clearfix { zoom: 1; }
+.clearfix:before { content: ""; display: table; }
+.clearfix:after { content: ""; display: table; clear: both; }
+
+/* ==========================================================================
+ █ shop-checkout
+ ==========================================================================*/
+.container { margin-bottom: 100px; }
+
+/* * * portlet 設定 * * */
+.portlet { width: 90%; margin: 0 auto; overflow: hidden; padding-bottom: 30px; margin-top: 30px; margin-top: 50px; }
+
+.portlet-title { padding: 10px 20px; background-color: #E8E8E8; }
+.portlet-title i { padding: 0 10px; font-size: 2rem; }
+
+.form-group { padding: 20px 30px; overflow: hidden; position: relative; }
+.form-group label { float: left; color: #404146; font-size: 0.95em; width: 30%; }
+.form-group .form-right { float: right; width: 65%; }
+.form-group input { width: 100%; }
+.form-group input[type="checkbox"], .form-group input[type="radio"] { width: 30px; }
+.form-group span { font-size: 0.8em; color: #cccccc; display: block; }
+
+.form-actions { float: right; }
+
+input.aaa { margin-left: 30px; position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; /* margin: 0px; */ /* padding: 0px; */ /* border: 0px; */ /* opacity: 0; */ /* background: white; */ border: 2px solid #000; }
+
+.pay-actions { width: 100%; padding: 40px 20px; margin: 0 auto; }
+
+.color-100 { color: #F181A8; border: 1px solid #F181A8; font-size: 1.5rem; margin: 10px; }
+
+.color-200 { color: #F5598E; border: 1px solid #F5598E; font-size: 1.5rem; margin: 10px; }
+
+.color-300 { color: #E91E63; border: 1px solid #E91E63; font-size: 1.5rem; margin: 10px; }
+
+.color-400 { color: #C2185B; border: 1px solid #C2185B; font-size: 1.5rem; margin: 10px; }
+
+.color-500 { color: #880E4F; border: 1px solid #880E4F; font-size: 1.5rem; margin: 10px; }
+
+.color-600 { color: #5A66A5; border: 1px solid #5A66A5; font-size: 1.5rem; margin: 10px; }
+
+.color-100:hover, .color-100-active { color: #fff; border: 1px solid #F181A8; background: #F181A8; }
+
+.color-200:hover, .color-200-active { color: #fff; border: 1px solid #F5598E; background: #F5598E; }
+
+.color-300:hover, .color-300-active { color: #fff; border: 1px solid #E91E63; background: #E91E63; }
+
+.color-400:hover, .color-400-active { color: #fff; border: 1px solid #C2185B; background: #C2185B; }
+
+.color-500:hover, .color-500-active { color: #fff; border: 1px solid #880E4F; background: #880E4F; }
+
+.color-600:hover, .color-600-active { color: #fff; border: 1px solid #5A66A5; background: #5A66A5; }
+
+.form-control { font-size: 1.5rem; opacity: 1; }

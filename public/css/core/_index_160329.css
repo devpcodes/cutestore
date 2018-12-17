@@ -1,0 +1,73 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+.banner .bullet-group, .content, .gdm, .gdm-wrap-right, .gdm-block-inner, .gdm-block-inner .gdm-block-wrap, .gdm-block-wrap, .menu-style, .product-list, .loadmore, .clearfix { zoom: 1; }
+.banner .bullet-group:before, .content:before, .gdm:before, .gdm-wrap-right:before, .gdm-block-inner:before, .gdm-block-inner .gdm-block-wrap:before, .gdm-block-wrap:before, .menu-style:before, .product-list:before, .loadmore:before, .clearfix:before { content: ""; display: table; }
+.banner .bullet-group:after, .content:after, .gdm:after, .gdm-wrap-right:after, .gdm-block-inner:after, .gdm-block-inner .gdm-block-wrap:after, .gdm-block-wrap:after, .menu-style:after, .product-list:after, .loadmore:after, .clearfix:after { content: ""; display: table; clear: both; }
+
+/* ==========================================================================
+ █ index 
+ ==========================================================================*/
+/* * * banner設定 * * */
+.banner { position: relative; max-width: 1170px; margin: 0 auto; }
+.banner .slide-wrap { max-height: 485px; overflow: hidden; }
+.banner .slide { width: 9999px; max-width: 5400px; margin: 0 auto; height: auto; }
+.banner .slide li { float: left; }
+.banner .slide img { display: block; height: auto; max-width: 100%; max-height: 540px; }
+.banner .bullet-group { position: absolute; bottom: 20px; width: auto; height: 20px; margin: 0 auto; margin-left: 45%; }
+.banner .bullet-group li { float: left; }
+.banner .bullet-group .bullet { display: block; cursor: pointer; text-indent: -9999px; width: 10px; height: 10px; border-radius: 50%; background-color: #fff; margin-left: 10px; }
+.banner .bullet-group .bullet:hover { width: 13px; height: 13px; background-color: #292929; }
+.banner .bullet-group .bullet:active, .banner .bullet-group .bullet .active { background-color: #292929; width: 13px; height: 13px; }
+.banner .arrow { position: absolute; height: 100%; top: 0; left: 0; }
+.banner .arrow-right { position: absolute; top: 50%; right: -30px; display: block; box-shadow: 0px 13px 42px 11px rgba(0, 0, 0, 0.1); background: url(../../images/i-arrowright.png) no-repeat; width: 59px; height: 59px; transition: all 1000ms ease; }
+.banner .arrow-right:hover { background: url(../../images/i-arrowright-hover.png) no-repeat; width: 59px; height: 59px; }
+.banner .arrow-left { position: absolute; top: 50%; left: -30px; display: block; box-shadow: 0px 13px 42px 11px rgba(0, 0, 0, 0.1); background: url(../../images/i-arrowleft.png) no-repeat; width: 59px; height: 59px; transition: all 1000ms ease; }
+.banner .arrow-left:hover { background: url(../../images/i-arrowleft-hover.png) no-repeat; width: 59px; height: 59px; }
+
+/* * * content設定 * * */
+.container { max-width: 1170px; margin: 0 auto; height: auto; overflow: hidden; margin-top: 30px; }
+
+/* * * gdm設定 * * */
+.gdm { width: 100%; max-height: 670px; margin: 0 auto; overflow: hidden; }
+
+.gdm-wrap-left { width: 50%; float: left; }
+.gdm-wrap-left img { width: 100%; height: auto; }
+
+.gdm-wrap-right { width: 50%; float: right; height: inherit; }
+
+.gdm-block-inner { max-height: 390px; margin-bottom: 10px; }
+.gdm-block-inner .gdm-block-wrap { padding-left: 5px; width: 50%; }
+
+.gdm-block-wrap { float: right; padding-left: 5px; padding-right: 5px; }
+
+/* * * menu-style設定 * * */
+.menu-style { max-width: 1170px; max-width: 800px; margin: 0 auto; padding: 60px 40px; text-align: center; }
+.menu-style li { display: inline-block; }
+.menu-style a { display: block; padding: 0 20px; margin-left: 20px; font-size: 1.8rem; color: #b0b0b0; transition: all 500ms ease; }
+.menu-style a:hover { color: #E7E7E7; }
+
+/* * * product-list設定 * * */
+.product-list { max-width: 1170px; margin: 0 auto; }
+
+.product-item { box-sizing: border-box; position: relative; width: 285px; max-width: 285px; height: 331px; float: left; margin-right: 7px; margin-bottom: 10px; background-color: #efefef; }
+.product-item .product-image { background-color: #000; }
+.product-item img { max-width: 100%; }
+.product-item .product-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0); transition: all 500ms ease; }
+.product-item .product-overlay:hover { cursor: pointer; background-color: rgba(255, 255, 255, 0.8); }
+.product-item .product-overlay:hover .product-decs { opacity: 1; transition: all 500ms ease; }
+.product-item .product-overlay h3 a { font-size: 0.9em; font-weight: 800; transition: all 300ms ease; }
+.product-item .product-overlay h3 a:hover { text-decoration: underline; color: #ff6633; }
+.product-item .product-overlay p { font-size: 0.8em; }
+.product-item .product-overlay .product-decs { opacity: 0; text-align: center; margin-top: 40%; margin-bottom: 50%; }
+.product-item .product-overlay .price { font-size: 1.2em; color: #ff6633; }
+.product-item .product-overlay .add-cart { display: inline-block; cursor: pointer; text-indent: -9999px; border-radius: 50%; margin-left: 10px; text-align: center; margin: 0 auto; background: url(../../images/i-cart2.png) no-repeat; width: 50px; height: 50px; background-position: 50%; background-color: #ff6633; border: 1px solid #ff6633; transition: all 500ms ease; }
+.product-item .product-overlay .add-cart:hover { background: url(../../images/i-cart-hover.png) no-repeat; width: 50px; height: 50px; background-position: 50%; background-color: #fff; border: 1px solid #ff6633; }
+.product-item .product-overlay .link-view { display: inline-block; cursor: pointer; text-indent: -9999px; border-radius: 50%; margin-left: 10px; text-align: center; margin: 0 auto; background: url(../../images/i-view.png) no-repeat; width: 50px; height: 50px; background-position: 50%; background-color: #ff6633; transition: all 500ms ease; }
+.product-item .product-overlay .link-view:hover { background: url(../../images/i-view-hover.png) no-repeat; width: 50px; height: 50px; background-position: 50%; background-color: #fff; border: 1px solid #ff6633; }
+
+/* * * loadmore 設定 * * */
+.loadmore { margin: 0 auto; text-align: center; margin-top: 30px; margin-bottom: 30px; min-height: 55px; }
+.loadmore a { display: inline-block; padding: 10px 20px; color: #fff; background: #ff6633; text-transform: uppercase; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; }
+.loadmore a:hover { color: #ff6633; background: #fff; border: 1px solid #ff6633; }

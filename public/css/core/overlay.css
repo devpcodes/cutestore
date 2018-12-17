@@ -1,0 +1,64 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+.bullet-group, .product-list-container, .list-view-sorting, .clearfix { zoom: 1; }
+.bullet-group:before, .product-list-container:before, .list-view-sorting:before, .clearfix:before { content: ""; display: table; }
+.bullet-group:after, .product-list-container:after, .list-view-sorting:after, .clearfix:after { content: ""; display: table; clear: both; }
+
+/* ==========================================================================
+ █ overlay
+ ==========================================================================*/
+/* * * sidebar 設定 * * */
+.sidebar { float: left; width: 25%; height: auto; padding: 20px 10px 30px 10px; }
+.sidebar h2 { font-size: 1.1rem; color: #707070; }
+.sidebar .banner { margin-top: 60px; }
+.sidebar .banner img { height: 500px; }
+
+.accordion-list { padding: 8px 10px 6px; }
+.accordion-list input[type='checkbox'] { display: none; }
+.accordion-list i { position: absolute; right: 0; font-size: 10px; color: gray; padding: 10px 0px; opacity: 0; transition: all 0.5s ease-in-out; }
+.accordion-list label { width: 100%; display: block; padding: 8px 10px 6px; font-size: 1.1em; border-bottom: 1px solid #e3e3e3; position: relative; }
+.accordion-list label:hover { color: #ff6633; }
+.accordion-list label:hover i { opacity: 1; }
+.accordion-list .dropdown-menu { height: 0; overflow: hidden; padding-left: 30px; -webkit-transition: height 0.3s ease; -moz-transition: height 0.3s ease; -o-transition: height 0.3s ease; -ms-transition: height 0.3s ease; transition: height 0.3s ease; }
+.accordion-list .dropdown-menu a { font-size: 0.95em; color: #9e9e9e; }
+
+.dropdown-menu { height: 0; transition: all 2s ease-in-out; }
+
+li input[type="checkbox"]:checked ~ label i { opacity: 1; transform: rotate(-180deg); }
+
+li input[type="checkbox"]:checked ~ .dropdown-menu { height: auto; display: block; height: 120px; min-height: 40px; max-height: 400px; -webkit-transition: height 0.5s ease; -moz-transition: height 0.5s ease; -o-transition: height 0.5s ease; -ms-transition: height 0.5s ease; transition: height 0.5s ease; }
+
+.banner { position: relative; margin: 0 auto; }
+
+.bullet-group { position: absolute; bottom: 20px; width: auto; height: 20px; margin: 0 auto; margin-left: 45%; }
+.bullet-group li { float: left; }
+.bullet-group .bullet { display: block; cursor: pointer; text-indent: -9999px; width: 10px; height: 10px; border-radius: 50%; background-color: #fff; margin-left: 10px; }
+.bullet-group .bullet:hover { width: 13px; height: 13px; background-color: #292929; }
+
+/* * * product-list-container 設定 * * */
+.product-list-container { float: right; width: 75%; padding: 0 22px; }
+
+.list-view-sorting { float: right; width: 100%; margin-bottom: 30px; }
+.list-view-sorting .form-control { width: auto; margin-right: 10px; padding: 0 20px; }
+.list-view-sorting .list-sorting { float: right; }
+.list-view-sorting .list-view { float: right; }
+
+.product-list { width: 100%; overflow: hidden; }
+
+.product-item { max-width: 267px; height: 314px; height: auto; float: left; margin-right: 10px; margin-bottom: 10px; }
+.product-item .product-image { min-height: 314px; min-height: 311px; background-color: transparent; }
+.product-item .product-decs h3 a { font-size: 0.9em; font-weight: 800; padding: 5px; }
+.product-item .product-decs h3 a:hover { text-decoration: underline; color: #ff6633; }
+.product-item .product-decs p { font-size: 0.8em; }
+.product-item .product-decs .price { font-size: 1.2em; color: #ff6633; }
+.product-item .product-item-wrap { position: relative; background-color: #efefef; min-width: 267px; }
+.product-item .product-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; text-align: center; background-color: rgba(255, 255, 255, 0); transition: all 500ms ease; }
+.product-item .product-overlay:hover { cursor: pointer; background-color: rgba(255, 255, 255, 0.8); }
+.product-item .product-overlay:hover .overlay-btn { opacity: 1; }
+.product-item .product-overlay .overlay-btn { opacity: 0; margin-top: 50%; margin-bottom: 50%; }
+.product-item .product-overlay .add-cart { display: inline-block; cursor: pointer; text-indent: -9999px; border-radius: 50%; margin-left: 10px; text-align: center; margin: 0 auto; background: url(../../images/i-cart2.png) no-repeat; width: 50px; height: 50px; background-position: 50%; background-color: #ff6633; transition: all 500ms ease; }
+.product-item .product-overlay .add-cart:hover { background: url(../../images/i-cart-hover.png) no-repeat; width: 50px; height: 50px; background-position: 50%; background-color: #fff; border: 1px solid #ff6633; }
+.product-item .product-overlay .link-view { display: inline-block; cursor: pointer; text-indent: -9999px; border-radius: 50%; margin-left: 10px; text-align: center; margin: 0 auto; background: url(../../images/i-view.png) no-repeat; width: 50px; height: 50px; background-position: 50%; background-color: #ff6633; transition: all 500ms ease; }
+.product-item .product-overlay .link-view:hover { background: url(../../images/i-view-hover.png) no-repeat; width: 50px; height: 50px; background-position: 50%; background-color: #fff; border: 1px solid #ff6633; }

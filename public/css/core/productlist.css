@@ -1,0 +1,38 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+.product-list-container, .list-view-sorting, .clearfix { zoom: 1; }
+.product-list-container:before, .list-view-sorting:before, .clearfix:before { content: ""; display: table; }
+.product-list-container:after, .list-view-sorting:after, .clearfix:after { content: ""; display: table; clear: both; }
+
+/* ==========================================================================
+ █ productlist
+ ==========================================================================*/
+/* * * product-list-container 設定 * * */
+.product-list-container { float: right; width: 75%; padding: 0 22px; }
+
+.list-view-sorting { float: right; width: 100%; margin-bottom: 30px; }
+.list-view-sorting .form-control { width: auto; margin-right: 10px; padding: 0 20px; }
+.list-view-sorting .list-sorting { float: right; }
+.list-view-sorting .list-view { float: right; }
+
+.product-list { width: 100%; overflow: hidden; }
+
+.product-item { max-width: 267px; height: 314px; height: auto; float: left; margin-right: 10px; margin-bottom: 10px; }
+.product-item .product-image { min-height: 314px; min-height: 311px; max-height: 311px; background-color: transparent; }
+.product-item .product-image > a { max-height: 311px; min-height: 311px; display: block; overflow: hidden; position: absolute; width: 100%; }
+.product-item .product-image img { width: 100%; border: 0 none transparent; top: 10px; height: 311px; }
+.product-item .product-decs h3 a { font-size: 0.9em; padding: 5px; }
+.product-item .product-decs h3 a:hover { text-decoration: underline; color: #ff6633; }
+.product-item .product-decs p { font-size: 0.8em; padding-left: 6px; height: 23px; }
+.product-item .product-decs .price { font-size: 1.2em; color: #ff6633; }
+.product-item .product-item-wrap { position: relative; background-color: #efefef; min-width: 267px; }
+.product-item .product-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; text-align: center; background-color: rgba(255, 255, 255, 0); transition: all 500ms ease; }
+.product-item .product-overlay:hover { cursor: pointer; background-color: rgba(255, 255, 255, 0.8); }
+.product-item .product-overlay:hover .overlay-btn { opacity: 1; }
+.product-item .product-overlay .overlay-btn { opacity: 0; margin-top: 50%; margin-bottom: 50%; }
+.product-item .product-overlay .add-cart { display: inline-block; cursor: pointer; text-indent: -9999px; border-radius: 50%; margin-left: 10px; text-align: center; margin: 0 auto; background: url(../../images/i-cart2.png) no-repeat; width: 50px; height: 50px; background-position: 50%; background-color: #ff6633; transition: all 500ms ease; }
+.product-item .product-overlay .add-cart:hover { background: url(../../images/i-cart-hover.png) no-repeat; width: 50px; height: 50px; background-position: 50%; background-color: #fff; border: 1px solid #ff6633; }
+.product-item .product-overlay .link-view { display: inline-block; cursor: pointer; text-indent: -9999px; border-radius: 50%; margin-left: 10px; text-align: center; margin: 0 auto; background: url(../../images/i-view.png) no-repeat; width: 50px; height: 50px; background-position: 50%; background-color: #ff6633; background-color: #C8B6CC; transition: all 500ms ease; }
+.product-item .product-overlay .link-view:hover { background: url(../../images/i-view-hover.png) no-repeat; width: 50px; height: 50px; background-position: 50%; background-color: #fff; border: 1px solid #ff6633; border: 1px solid #C8B6CC; }

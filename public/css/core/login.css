@@ -1,0 +1,25 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+.form-container, .clearfix { zoom: 1; }
+.form-container:before, .clearfix:before { content: ""; display: table; }
+.form-container:after, .clearfix:after { content: ""; display: table; clear: both; }
+
+/* ==========================================================================
+ █ login
+ ==========================================================================*/
+.form-container { width: 50%; margin: 0 auto; padding: 0 22px; margin-bottom: 100px; padding-bottom: 100px; }
+.form-container .or { color: #cfcfcf; display: block; padding: 15px 0; font-size: 1.5em; }
+
+.form-right { float: right; padding: 0px 0px 20px 0px; width: 65%; }
+
+fieldset { margin-bottom: 35px; }
+
+legend { font-size: 1.5em; margin-bottom: 30px; }
+
+label { float: left; color: #404146; font-size: 0.95em; width: 30%; }
+
+.form-group { padding: 15px 0px 0px 0px; overflow: hidden; }
+
+.btn-primary { float: right; margin-right: 20px; }
